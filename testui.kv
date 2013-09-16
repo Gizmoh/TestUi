@@ -17,6 +17,25 @@
 			multiline: False
 			password: False
 
+	BoxLayout:
+		ModalView:
+			ListView:
+				size_hint: 1,.8
+				item_strings: [str(index) for index in range(100)]
+
+		GridLayout:
+			size_hint: .3,1
+			orientation: "vertical"
+			cols: 2
+			Label:
+				text: "Nombre:"
+			TextInput:
+				text: "Derp"
+			Label:
+				text: "Precio:"
+			TextInput:
+				text: "gratis"
+
 	GridLayout:
 		rows: 4
 		row_force_default: True
