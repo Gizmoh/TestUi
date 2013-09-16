@@ -2,6 +2,7 @@
 
 <Interfaz>:
 	orientation: "vertical"
+	spacing: "4dp"
 	BoxLayout:
 		size_hint: 1,.1
 		Label:
@@ -20,7 +21,7 @@
 	BoxLayout:
 		ModalView:
 			ListView:
-				size_hint: 1,.8
+				size_hint: 1,.9
 				item_strings: [str(index) for index in range(100)]
 
 		GridLayout:
@@ -35,11 +36,17 @@
 				text: "Precio:"
 			TextInput:
 				text: "gratis"
-
+	BoxLayout:
+		size_hint: 1,.15
+		Button:
+			text: "boton01"
+		Button:
+			text: "boton02"
+		TextInput:
+			text: "search!"
 	GridLayout:
 		rows: 4
-		row_force_default: True
-		row_default_height: "40dp"
+		size_hint: 1,.4
 		Button:
 			text: "Noob"
 		Button:
